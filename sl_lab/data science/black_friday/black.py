@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 df = pd.read_csv("blackfri.csv")
-print(\"<-----Data Information----->\")
+print("<-----Data Information----->")
 print("Head of Dataset")
 print(df.head(5))
 print("Head of Dataset")
@@ -18,7 +18,7 @@ print(df.head(5))
    
 """d) Manipulate data by replacing empty column values in ‘City_Category’ with a default value for the city. """
 print("Filling empty values")
-df['City_Category'] = df['City_Category'].fillna(\"A\")
+df['City_Category'] = df['City_Category'].fillna("A")
 print(df.head(5))
 
 """e) Convert the attribute ‘City_Category’ to have ‘A’ to be ‘Metro Cities’, ‘B’ to be ‘Small Towns’ ,  ‘C’ to be ‘Villages’."""
